@@ -1,4 +1,6 @@
 module.exports = {
+
+  //react
   root: true,
   env: { browser: true, es2020: true },
   extends: [
@@ -7,6 +9,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
   ],
+
+  //components
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
@@ -30,5 +34,15 @@ module.exports = {
     'comma-dangle': 1,
     'comma-spacing': 1,
     'arrow-spacing': 1
+  },
+
+  //mui
+  'rules': {
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': ['@mui/*/*/*']
+      }
+    ]
   }
 }

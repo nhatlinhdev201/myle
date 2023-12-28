@@ -4,7 +4,7 @@ const theme = extendTheme({
   colorSchemes: {
     light: {
       palette: {
-
+        
       }
     },
     dark: {
